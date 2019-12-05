@@ -1,0 +1,239 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #1d4d4f;
+}
+
+.container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../img/main.jpg") no-repeat center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/main.jpg") no-repeat center top;
+  background-size: cover;
+  background-position: 60%;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-wrapper #home {
+  padding: 200px 10px 150px;
+}
+
+.home-wrapper #home h1 {
+  color: #e5dfdf;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.home-wrapper #home P {
+  color: #e5dfdf;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.header {
+  height: 70px;
+  background-color: rgba(48, 48, 48, 0.9);
+  position: fixed;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.header .container a img {
+  width: 100px;
+}
+
+.about-me-bg {
+  background-color: #e5dfdf;
+  padding-bottom: 15px;
+}
+
+.about-me-bg .about-me h2 {
+  margin: 0;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.about-me-bg .about-me .frame {
+  border-radius: 5px;
+  background-color: #6ba8a9;
+  width: 100%;
+}
+
+.about-me-bg .about-me .frame img {
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+}
+
+.about-me-bg .about-me .card {
+  background-color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.about-me-bg .about-me .card p {
+  padding: 25px;
+  text-align: justify;
+}
+
+.skills-bg {
+  padding: 20px;
+  background-color: #6ba8a9;
+}
+
+.skills-bg .skills h2 {
+  text-align: center;
+}
+
+.skills-bg .skills .skill-card {
+  background-color: #357376;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.skills-bg .skills .skill-card h3 {
+  text-align: center;
+  color: #e5dfdf;
+}
+
+.skills-bg .skills .skill-card p {
+  color: #e5dfdf;
+  text-align: justify;
+}
+
+.projects-bg {
+  padding: 20px;
+  background-color: #e5dfdf;
+}
+
+.projects-bg .projects {
+  text-align: center;
+}
+
+.projects-bg .projects .project-card {
+  padding: 20px;
+  background-color: #6ba8a9;
+  margin-bottom: 10px;
+}
+
+.contact-me-bg {
+  padding: 20px;
+  background-color: #357376;
+}
+
+.contact-me-bg .contact-me {
+  text-align: center;
+}
+
+.contact-me-bg .contact-me h2 {
+  color: #e5dfdf;
+}
+
+.contact-me-bg .contact-me .frame {
+  background-color: #e5dfdf;
+  padding: 20px;
+}
+
+.contact-me-bg .contact-me .frame form {
+  text-align: center;
+}
+
+.contact-me-bg .contact-me .frame form label {
+  color: #1d4d4f;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 48px;
+  padding: 5px;
+}
+
+.footer a i {
+  color: #357376;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 465px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 753px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .division {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .division .card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 0px;
+            flex: 2 0px;
+    margin: 0px 15px;
+  }
+  .container .division .skill-card {
+    margin: 0px 15px;
+  }
+  .container .division .project-card {
+    margin: 0px 15px;
+  }
+  .container .division .frame {
+    width: 320px;
+  }
+  .home-wrapper #home h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 977px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1185px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1585px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

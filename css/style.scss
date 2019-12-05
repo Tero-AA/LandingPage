@@ -1,0 +1,217 @@
+@import '_variables.scss';
+
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  color: $color-four;
+}
+
+
+.container {
+  width: $portrait;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-wrapper {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/main.jpg') no-repeat center top;
+  background-size: cover;
+  background-position: 60%;
+  width: 100%;
+  height: 100vh;
+  #home {
+    padding: 200px $sm 150px;
+    h1 {
+        color: $color-one;
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 24px;
+      }
+      P {
+        color: $color-one;
+        font-size: 24px;
+        margin-top: 24px;
+      }
+  }
+}
+
+.header {
+  height: 70px;
+  background-color: rgba(48, 48, 48, 0.9);
+  position: fixed;
+  padding: $sm 0;
+  width: 100%;
+  .container{
+    a {
+      img {
+          width: 100px;
+      }
+    }
+  }
+}
+
+
+.about-me-bg{
+  background-color: $color-one;
+  padding-bottom: $md;
+  .about-me {
+    h2 {
+      margin: 0;
+      text-align: center;
+      padding: $lg 0;
+    }
+    .frame {
+      border-radius: $xs;
+      background-color: $color-two;
+      width: 100%;
+      // box-shadow: $sm $sm $xs rgb(172, 171, 171);
+      img {
+        border-radius: $xs;
+        width: 100%;
+        padding: $md;
+      }
+    }
+    .card {
+      background-color: $color-five;
+      margin-top: $xl;
+      margin-bottom: $mdlg;
+      p {
+        padding: $lg;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.skills-bg {
+  padding: $mdlg;
+  background-color: $color-two;
+  .skills {
+    h2 {
+      text-align: center;
+    }
+    .skill-card {
+      background-color: $color-three;
+      padding: $mdlg;
+      margin-bottom: $sm;
+      h3 {
+        text-align: center;
+        color: $color-one;
+      }
+      p {
+        color: $color-one;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.projects-bg {
+  padding: $mdlg;
+  background-color: $color-one;
+  .projects {
+    text-align: center;
+    .project-card {
+      padding: $mdlg;
+      background-color: $color-two;
+      margin-bottom: $sm;
+    }
+  }
+}
+
+.contact-me-bg {
+  padding: $mdlg;
+  background-color: $color-three;
+  .contact-me {
+    text-align: center;
+    h2 {
+      color: $color-one;
+    }
+    .frame {
+      background-color: $color-one;
+      padding: $mdlg;
+      form {
+        text-align: center;
+        label {
+          color: $color-four;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  a {
+    text-decoration: none;
+    font-size: 48px;
+    padding: $xs;
+    i {
+      color: $color-three;
+    }
+  }
+}
+
+
+@media (min-width: $landscape) {
+  .container {
+      width: $landscape - 15;
+  }
+}
+
+@media (min-width: $tablets) {
+    .container {
+      width: $tablets - 15;
+      display: flex;
+      flex-direction: column;
+      .footer {
+        flex-direction: row;
+      }
+      .division {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .card {
+          flex: 2 0px;
+          margin: 0px $md;
+        }
+        .skill-card {
+          margin: 0px $md;
+        }
+        .project-card {
+          margin: 0px $md;
+        }
+        .frame {
+          width: $portrait;
+        }
+      }
+
+    }
+    .home-wrapper {
+      #home {
+        h1 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+
+@media (min-width: $desktop) {
+  .container {
+      width: $desktop - 15;
+  }
+}
+
+@media (min-width: $widescreen) {
+  .container {
+      width: $widescreen - 15;
+  }
+}
+
+@media (min-width: $ultrawidescreen) {
+  .container {
+      width: $ultrawidescreen - 15;
+  }
+}
