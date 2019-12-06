@@ -1,18 +1,20 @@
 @import '_variables.scss';
 
-
 * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   color: $color-four;
 }
 
+// Container
 
 .container {
   width: $portrait;
   margin-left: auto;
   margin-right: auto;
 }
+
+// home
 
 .home-wrapper {
   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/main.jpg') no-repeat center top;
@@ -37,6 +39,8 @@
   }
 }
 
+// header
+
 .header {
   height: 70px;
   background-color: rgba(48, 48, 48, 0.9);
@@ -52,6 +56,7 @@
   }
 }
 
+// about me
 
 .about-me-bg{
   background-color: $color-one;
@@ -85,6 +90,8 @@
   }
 }
 
+// skills and expertise
+
 .skills-bg {
   padding: $mdlg;
   background-color: $color-two;
@@ -108,6 +115,8 @@
   }
 }
 
+// projects
+
 .projects-bg {
   padding: $mdlg;
   background-color: $color-one;
@@ -120,6 +129,8 @@
     }
   }
 }
+
+// contact me
 
 .contact-me-bg {
   padding: $mdlg;
@@ -142,6 +153,8 @@
   }
 }
 
+// footer
+
 .footer {
   text-align: center;
   a {
@@ -154,6 +167,7 @@
   }
 }
 
+// media queries
 
 @media (min-width: $landscape) {
   .container {
@@ -175,13 +189,13 @@
         justify-content: space-evenly;
         .card {
           flex: 2 0px;
-          margin: 0px $md;
+          margin: 0 $md;
         }
         .skill-card {
-          margin: 0px $md;
+          margin: $xl $md;
         }
         .project-card {
-          margin: 0px $md;
+          margin: $xl $md;
         }
         .frame {
           width: $portrait;
@@ -202,16 +216,38 @@
   .container {
       width: $desktop - 15;
   }
+    .home-wrapper {
+      #home {
+        h1 {
+          font-size: 52px;
+        }
+      }
+    }
 }
 
 @media (min-width: $widescreen) {
   .container {
       width: $widescreen - 15;
   }
+      .home-wrapper {
+      #home {
+        h1 {
+          font-size: 56px;
+        }
+      }
+    }
 }
 
 @media (min-width: $ultrawidescreen) {
   .container {
       width: $ultrawidescreen - 15;
   }
+
+      .home-wrapper {
+      #home {
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
 }

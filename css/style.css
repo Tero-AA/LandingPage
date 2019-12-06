@@ -203,13 +203,13 @@
     -webkit-box-flex: 2;
         -ms-flex: 2 0px;
             flex: 2 0px;
-    margin: 0px 15px;
+    margin: 0 15px;
   }
   .container .division .skill-card {
-    margin: 0px 15px;
+    margin: 30px 15px;
   }
   .container .division .project-card {
-    margin: 0px 15px;
+    margin: 30px 15px;
   }
   .container .division .frame {
     width: 320px;
@@ -223,17 +223,26 @@
   .container {
     width: 977px;
   }
+  .home-wrapper #home h1 {
+    font-size: 52px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1185px;
   }
+  .home-wrapper #home h1 {
+    font-size: 56px;
+  }
 }
 
 @media (min-width: 1600px) {
   .container {
     width: 1585px;
+  }
+  .home-wrapper #home h1 {
+    font-size: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
